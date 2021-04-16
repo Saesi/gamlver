@@ -50,6 +50,11 @@ p {
   padding: 0;
 }
 
+.big {
+  font-size: small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;
