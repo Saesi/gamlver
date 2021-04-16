@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nafn</th>
+                    <th>Aldur</th>
+                    <th>Heimilisfang</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Nafn">Jón Guðmundson</td>
+                    <td data-label="Aldur">53</td>
+                    <td data-label="Heimilisfang">Hraunmói 18</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Arnar Jakobson</td>
+                    <td data-label="Aldur">33</td>
+                    <td data-label="Heimilisfang">Smárahlíð 5</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Guðríður Arnórsdóttir</td>
+                    <td data-label="Aldur">20</td>
+                    <td data-label="Heimilisfang">Ingólfsgata 3</td>
+                </tr>
+                <tr>
+                    <td data-label="Nafn">Ingólfur Brynjarsson</td>
+                    <td data-label="Aldur">32</td>
+                    <td data-label="Heimilisfang">Hraunmói 5</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <label for="nafn">Fullt Nafn:</label><br>
+            <input type="text" id="nafn" name="nafn" required placeholder=Nafn fyllið út þennan reit“><br>
+            <label for="Heimilisfang">Heimilisfang:</label><br>
+            <input type="text" id="Heimilisfang" name="Heimilisfang" required placeholder=Heimilisfang fyllið út þennan reit“><br>
+            <label for="Netfang">Netfang:</label><br>
+            <input type="email" id="Netfang" name="Netfang" required placeholder=Netfang fyllið út þennan reit“><br><br>
+            <label for="birthday">Afmælisdagur:</label><br>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <p>Sláðu kyn þitt:</p><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Karlkyns</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Kvenkyns</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Annað</label><br><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bill">
+            <label for="vehicle1">Ég nota bíl</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Hjol">
+            <label for="vehicle2">Ég nota hjól</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Ganga">
+            <label for="vehicle3">Ég fer labbandi</label><br><br>
+            <select id="country" name="country" required placeholder=“fyllið út þennan reit“>
+            <option value="is">Ísland</option>
+            <option value="us">Bandarríkin</option>
+            <option value="uk">Bretland</option>
+            <textarea rows="4" cols="37" name="comment" form="usrform" placeholder=Athugarsemdir fyllið út þennan reit“></textarea>
+            <input type="submit" value="Submit" class="Hnappi">
+        </form>
+    </body>
+</html>
