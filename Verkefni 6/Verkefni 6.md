@@ -1,0 +1,1 @@
+Ég hef ekki hugmynd um hvað ég er að gera.
