@@ -1,5 +1,29 @@
+.body {
+    background-color: orange;
+}
 .haus {
     background-color: orange;
+    display: grid;
+    grid-template-areas: 
+    "svg title select";
+}
+form {
+    display: inline-block;
+}
+form {
+    margin: 5em;
+    border: solid black 2px;
+    border-radius: 5%;
+    padding: 1em;
+    width: 21em;
+    background-color: rgba(34, 34, 34, 0.192);
+}
+.select {
+    padding: 1em;
+    text-align: right;
+}
+.title {
+    text-align: left;
 }
 .middle {
     background-color: white;
@@ -26,19 +50,109 @@
 .workaround {
     display: inline-block;
     background-color: rgba(255, 166, 0, 0.555);
-    width: 500px;
+    width: 75%;
     margin: 1em;
     padding: 50px;
 }
 .fotur {
     background-color: orange;
+    display: grid;
+    grid-template-areas: 
+    "form bsinfo map";
+}
+.bsinfo {
+    margin: 50px;
+    text-align: center;
 }
 .map {
-    float: right;
-    margin: 1em;
+    margin: 10px;
 }
+.bm {
+    margin: 5em;
+    border: rgba(255, 255, 255, 0.507) 2px;
+    border-radius: 5%;
+    padding: 1em;
+    width: 21em;
+    background-color: rgba(34, 34, 34, 0.192);
+}
+.select {
+    padding: 1em;
+    text-align: right;
+}
+
+.hide {
+    display: none
+}
+
+.dropbtn {
+    display: none;
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: flex;
+    position: inherit;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.fillin {
+    background-color: white;
+    text-align: center;
+}
+
 @media screen and (max-width: 720px){
+    .haus{
+        display:grid;
+        grid-template-areas:
+        "select"
+        "svg"
+        "title";
+    }
+    .fotur {
+        display: grid;
+        grid-template-areas:
+        "form"
+        "map"
+        "bsinfo";
+    }
     .part {
         height: 400px;
     }
+    .hide {
+        display: inline-block;
+    }
+    .dropbtn {
+        display: inline;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .fotur a{
+        display: flex;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: transparent;}
 }
