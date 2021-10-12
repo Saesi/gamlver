@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+{% extends 'base.html' %}
+{% block content %}
+<a href="/">Logga út</a>
+<section>
+    <table class="just">
+        {% for i in upplys %}
+            <tr><td>{{ i [1]['date'] }}</td><td>{{ i [1]['nafn'] }}</td><td><a href="/remove?nafn={{ i [1]['nafn'] }}&date={{ i [1]['date'] }}">eyða</a></td></tr>
+        {% endfor %}
+    </table>
+</section>
+<a href="/adding">Bæta við fyrirtækjum</a><br>
+<a href="/login">Reloada síðunni</a>
+{% endblock %}

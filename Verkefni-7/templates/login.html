@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST' action='/login' class="log">
+    <label>Notanda nafn:</label><br>
+    <input type="text" name="luser"><br>
+    <label>Aðgangsorð:</label><br>
+    <input type="text" name="lpwd"><br><br>
+    <input type="submit" value="Submit">
+</form><br>
+<a href="/">Aftur á forsíðu</a>
+{% endblock %}

@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(62, 226, 62);
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.just {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-left: 45%;
+}

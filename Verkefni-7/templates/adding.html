@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+{% extends 'base.html' %}
+{% block content %}
+<a>{{ msg }}</a><br>
+<form method='POST' action='/add' class="log">
+    <label>Nafn fyrirtækis:</label><br>
+    <input type="text" name="nuser"><br>
+    <label>Ár stofnað:</label><br>
+    <input type="text" name="npwd"><br><br>
+    <input type="submit" value="Submit">
+</form><br>
+<a href="/login">Aftur til baka</a>
+{% endblock %}
